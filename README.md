@@ -48,7 +48,7 @@ ensure k5_skillcheck
 
 ## Usage
 
-This script doesn't work alone, it needs to be called with an export. I created an example script that uses this skillcheck system, which is shown in the demo video. You can get that script here. 
+This script doesn't work alone, it needs to be called with an export. I created an example script that uses this skillcheck system, which is shown in the demo video. [You can get that script here.](https://github.com/kac5a/k5_skillcheck_example/tree/main)
 
 Simple usage with 3 skillchecks before success:
 
