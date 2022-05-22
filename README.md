@@ -52,29 +52,29 @@ This script doesn't work alone, it needs to be called with an export. I created 
 
 Simple usage with 3 skillchecks before success:
 
-    if  IsControlJustReleased(0, 38) then   
-	    Citizen.Wait(1000)
-	    local  succeeded = exports["k5_skillcheck"]:skillCheck()
-	    if  succeeded  then
-		    Citizen.Wait(1000)
-			local  succeeded2 = exports["k5_skillcheck"]:skillCheck()
-		    if  succeeded2  then
-			    Citizen.Wait(1000)
-			    local  succeeded3 = exports["k5_skillcheck"]:skillCheck()
-			    if  succeeded3  then
-				    SuccessFunction() -- This is the event that happens if all 3
-				                      -- of the skillchecks succeed
+	if IsControlJustReleased(0, 38) then   
+		Citizen.Wait(1000)
+		local succeeded = exports["k5_skillcheck"]:skillCheck()
+		if succeeded then
+			Citizen.Wait(1000)
+			local succeeded2 = exports["k5_skillcheck"]:skillCheck()
+		    	if  succeeded2  then
+				Citizen.Wait(1000)
+				local  succeeded3 = exports["k5_skillcheck"]:skillCheck()
+				if succeeded3  then
+					SuccessFunction() -- This is the event that happens if all 3
+							  -- of the skillchecks succeed
 				else
-				    FailFunction1() -- This is the event that happens if
-				                    -- the user misses the 3rd skillcheck
-			    end
-		    else
-			    FailFunction2() -- This is the event that happens if
+					FailFunction1() -- This is the event that happens if
+							-- the user misses the 3rd skillcheck
+				end
+			else
+				FailFunction2() -- This is the event that happens if
 				                -- the user misses the 2nd skillcheck
-		    end
-	    else
-		    FailFunction3() -- This is the event that happens if
-				            -- the user misses the 1st skillcheck
+			end
+		else
+			FailFunction3() -- This is the event that happens if
+					-- the user misses the 1st skillcheck
 		end
 	end
 
