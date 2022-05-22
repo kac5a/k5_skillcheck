@@ -4,7 +4,7 @@
 ![K5 Skillcheck](https://i.imgur.com/i5D1xpK.jpg)
   
 
-This is a **FREE** and **open** Fivem script that was created for everyone to use. The goal of this script is to create a skillchck system inspired by Dead By Daylight's skillcheck system, that doesn't use HTML canvases. Canvas can require a lot of resources from lower end PCs. This script uses JS, HTML and CSS only and utilizes [progressbar.js](https://github.com/kimmobrunfeldt/progressbar.js).
+This is a **FREE** and **open** Fivem script that was created for everyone to use. The goal of this script is to create a skillcheck system inspired by Dead By Daylight's system, that doesn't use HTML canvases. Canvas can require a lot of resources from lower end PCs. This script uses JS, HTML and CSS only and utilizes [progressbar.js](https://github.com/kimmobrunfeldt/progressbar.js).
 
   
 
