@@ -1,9 +1,10 @@
 local inSkillCheck
 local result
 
-function startSkillCheck()
+function startSkillCheck(difficulty)
+	print(difficulty)
 	SetNuiFocus(true, false)
-	SendNUIMessage({data = "start"})
+	SendNUIMessage({data = "start", difficulty = difficulty})
 end
 
 RegisterNUICallback('result', function(data, cb)
@@ -12,10 +13,10 @@ RegisterNUICallback('result', function(data, cb)
 	inSkillCheck = false
 end)
 
-function skillCheck()
+function skillCheck(difficulty)
 	if inSkillCheck then return end
 	inSkillCheck = true
-	startSkillCheck()
+	startSkillCheck(difficulty)
 	while inSkillCheck do
 		Citizen.Wait(1)
 	end
