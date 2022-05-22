@@ -34,17 +34,17 @@ ensure k5_skillcheck
 
 ## Usage
 
-This script doesn't work alone, it needs to be called with an export. I created an example script that uses this skillcheck system, which is shown in the demo video. [You can get that script here.](https://github.com/kac5a/k5_skillcheck_example/tree/main)
+This script doesn't work alone, it needs to be called with an export. I created an example script that uses this skillcheck system, which is shown in the demo video. [You can get that script here](https://github.com/kac5a/k5_skillcheck_example/tree/main). There are 3 difficulty levels that you can add in the function call, "easy", "normal", "hard", but it's not required. If no parameter is defined, the default difficulty is normal.
 
 Simple usage with 3 skillchecks before success:
 
     if IsControlJustReleased(0, 38) then
     	Citizen.Wait(1000)
-    	if exports["k5_skillcheck"]:skillCheck() then
+    	if exports["k5_skillcheck"]:skillCheck("easy") then
     		Citizen.Wait(1000)
-    	    	if exports["k5_skillcheck"]:skillCheck()  then
+    	    	if exports["k5_skillcheck"]:skillCheck("normal")  then
     			Citizen.Wait(1000)
-    			if exports["k5_skillcheck"]:skillCheck() then
+    			if exports["k5_skillcheck"]:skillCheck("normal") then
     				SuccessFunction() -- This is the event that happens if all 3
     						  -- of the skillchecks succeed
     			else
