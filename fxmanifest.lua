@@ -7,7 +7,6 @@ description 'K5 SkillCheck'
 version 'legacy'
 
 client_scripts {
-	'config.lua',
 	'client/main.lua',
 }
 
