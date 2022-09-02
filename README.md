@@ -1,4 +1,4 @@
-# K5 Shops
+# K5 Skillcheck
 
 ![K5 Skillcheck](https://i.imgur.com/i5D1xpK.jpg)
 
@@ -7,6 +7,11 @@ This is a **FREE** and **open** Fivem script that was created for everyone to us
 ## Demo
 
 Watch the demo here: [YouTube](https://www.youtube.com/watch?v=U9lGNTcdltk)
+
+## Help
+
+
+If you need any help, you can check out my [Discord](https://discord.com/invite/WmANgpdrgZ)
 
 # Download & Installation
 
