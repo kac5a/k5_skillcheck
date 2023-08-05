@@ -2,7 +2,6 @@ local inSkillCheck
 local result
 
 function startSkillCheck(difficulty)
-	print(difficulty)
 	SetNuiFocus(true, false)
 	SendNUIMessage({data = "start", difficulty = difficulty})
 end
